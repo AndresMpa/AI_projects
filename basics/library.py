@@ -1,8 +1,10 @@
 def hamming_for_strings(current_status, goal_state):
     distance = 0
-    for iteration, letter in enumerate(current_status):
-        if letter != goal_state[iteration]:
+    i = 0
+    for letter in current_status:
+        if letter != goal_state[i]:
             distance += 1
+        i += 1
     return distance
 
 

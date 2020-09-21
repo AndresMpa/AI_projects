@@ -43,7 +43,7 @@ class EightPuzzleProblem(search.SearchProblem, ABC):
         return 1
 
     def heuristic(self, current_state):
-        distance = lib.hamming_for_strings(current_state)
+        distance = lib.hamming_for_strings(current_state, cts.eight_eight_puzzle_goal)
         return distance
 
 
