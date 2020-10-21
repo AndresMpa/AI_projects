@@ -1,5 +1,4 @@
 from abc import ABC
-
 from simpleai import search
 from basics import library as lib
 from basics import constants as cts
